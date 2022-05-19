@@ -1,0 +1,49 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: green;
+    box-sizing: border-box;
+    gap: 4px;
+    height: 100vh;
+}
+
+
+
+.header {
+    display: grid;
+    grid-area: 1 / 2 / 2 / 5;
+    border: solid;
+}
+
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: ;
+    gap: 4px;
+}
+
+.side-nav {
+    display: grid;
+    grid-area: 1 / 1 / 5 / 2;
+    border: solid;
+}
+
+.projects {
+    border:solid;
+    display: grid;
+    grid-area: 2 / 2 / 5 / 4 ;
+}
+
+.announcements {
+    display: grid;
+    grid-area: 2 / 4 / 3 / 5;
+    border: solid;
+}
+
+.trending {
+    border: solid;
+    display: grid;
+    grid-area: 3 / 4 / 5 / 5;
+}
