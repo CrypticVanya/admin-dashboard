@@ -157,8 +157,9 @@ li img {
 
 
 .project-title {
-    background-color: red;
     position: absolute;
+    font-weight: 900;
+    font-size: 1.25rem
 }
 
 .cards {
@@ -167,6 +168,7 @@ li img {
     grid-template-rows: repeat(3, 1fr);
     gap: 16px;
     margin: 64px 24px 24px 24px;
+    
 }
 
 .icons {
@@ -183,20 +185,33 @@ li img {
     border-radius: 8px;
 }
 
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin: 0px;
+    background-color: red;
+}
+
 
 .card {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
     background-color: white;
     border-radius: 15px;
+    margin: 0px;
+    box-shadow: 2px 2px 5px gray;
+    border-left: 7.5px solid gold;
 }
 
 .card p {
-    display: grid;
-    grid-template-columns: repeat(1, fr);
-    gap: 0px;
-    background-color: red;
+    flex:1;
+    display: flex;
+    margin: 0px;
+    padding: 20px;
 }
+
 
 .announcements {
     display: grid;
@@ -216,6 +231,7 @@ li img {
     margin: 64px 24px 0px 0px;
     border-radius: 15px;
     font-size: .9rem;
+    box-shadow: 2px 2px 5px gray;
 }
 
 
@@ -249,32 +265,26 @@ li img {
 .trending {
     background-color:rgba(211, 211, 211, 0.623);
     display: grid;
-    grid-area: 3 / 4 / 5 / 5;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
 }
 
 .trending-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     background: white;
-    border: solid;
-    margin: 64px 24px 0px 0px;
+    margin: 64px 24px 24px 0px;
     border-radius: 15px;
-    max-height: 300px;
     font-size: .75rem;
+    box-shadow: 2px 2px 5px gray;
 }
 
 .trending-content img {
-    max-height: 50px;
+    max-height: 65px;
     border-radius: 50%;
 }
 
 
-.trending-content ul {
-}
-
 .trending-content li {
     list-style-type: none;
     display: flex;
+    gap: 20px;
 }
