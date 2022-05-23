@@ -1,37 +1,127 @@
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    background-color: green;
     box-sizing: border-box;
-    gap: 4px;
     height: 100vh;
+    margin: 0;
 }
 
 
+
+.user-info img {
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+.user-avatar img {
+    height: 80px;
+    border-radius: 50%;
+}
 
 .header {
     display: grid;
+    grid-template-rows: 1fr 1fr;
     grid-area: 1 / 2 / 2 / 5;
-    border: solid;
+    background: white;
+    box-shadow: 10px 5px 5px grey;
 }
 
 
-.menu {
+
+.wrapper-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#search-function {
+    display: flex;
+    gap: 16px;
+}
+
+
+::placeholder{color: white; padding-left: 15px;} #site-search {
+    background-color: rgb(211, 211, 211);
+    width: 500px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    font-size: 1rem;
+    color: white;
+}
+
+.user-info .user-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+#search-function button {
+    background-color:rgb(26, 178, 238);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    width: 75px;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 600
+
+}
+
+
+.user-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-area: ;
-    gap: 4px;
+    align-items: center;
+    gap: 6px;
 }
+
+
+.wrapper-below {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0px 7.5px 0px;
+}
+
+.user-greet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#share {
+    display: flex;
+    gap: 32px;
+}
+
+#share button {
+    background-color: rgb(26, 178, 238);
+    color: white;
+    height: 45px;
+    width: 100px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
 
 .side-nav {
     display: grid;
     grid-area: 1 / 1 / 5 / 2;
-    border: solid;
+    background-color: rgb(26, 178, 238);
 }
 
 .projects {
-    border:solid;
+    background-color: rgba(211, 211, 211, 0.623);
     display: grid;
     grid-area: 2 / 2 / 5 / 4 ;
 }
@@ -39,11 +129,9 @@ body {
 .announcements {
     display: grid;
     grid-area: 2 / 4 / 3 / 5;
-    border: solid;
 }
 
 .trending {
-    border: solid;
     display: grid;
     grid-area: 3 / 4 / 5 / 5;
 }
