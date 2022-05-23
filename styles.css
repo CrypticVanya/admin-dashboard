@@ -24,6 +24,8 @@ body {
     border-radius: 50%;
 }
 
+
+
 .header {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -118,20 +120,161 @@ body {
     display: grid;
     grid-area: 1 / 1 / 5 / 2;
     background-color: rgb(26, 178, 238);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 900;
 }
+
+
+li img {
+   max-height: 40px;
+}
+
+.side-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.dashboard img{
+    max-height: 500px;
+}
+
+.side-nav li {
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+}
+
 
 .projects {
     background-color: rgba(211, 211, 211, 0.623);
     display: grid;
     grid-area: 2 / 2 / 5 / 4 ;
+    
+}
+
+
+
+.project-title {
+    background-color: red;
+    position: absolute;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    margin: 64px 24px 24px 24px;
+}
+
+.icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 2px 10px;
+}
+
+.icons img {
+    background:rgba(211, 211, 211, 0.823);
+    max-height: 35px;
+    margin: 2px;
+    border-radius: 8px;
+}
+
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card p {
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    gap: 0px;
+    background-color: red;
 }
 
 .announcements {
     display: grid;
     grid-area: 2 / 4 / 3 / 5;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
+    background-color:rgba(211, 211, 211, 0.623);
+}
+
+.tittle {
+    font-weight: 600px;
+}
+
+
+.announcement { 
+    background-color: white;
+    margin: 64px 24px 0px 0px;
+    border-radius: 15px;
+    font-size: .9rem;
+}
+
+
+.announcement ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    margin: 0px;
+
+}
+
+.announcement li {
+    list-style-type: none;
+}
+
+.site-maintenance {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement p {
+    margin: 2px;
+}
+
+.tittle {
+    font-weight: 900;
 }
 
 .trending {
+    background-color:rgba(211, 211, 211, 0.623);
     display: grid;
     grid-area: 3 / 4 / 5 / 5;
+}
+
+.trending-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border: solid;
+    margin: 64px 24px 0px 0px;
+    border-radius: 15px;
+    max-height: 300px;
+    font-size: .75rem;
+}
+
+.trending-content img {
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+
+.trending-content ul {
+}
+
+.trending-content li {
+    list-style-type: none;
+    display: flex;
 }
